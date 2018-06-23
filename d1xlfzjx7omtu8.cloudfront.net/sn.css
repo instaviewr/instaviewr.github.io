@@ -7,7 +7,13 @@ overflow-x: hidden;
     background-size: cover;
     background-attachment: fixed;
 }
-#game-tool{background:url(img/tbg.jpg) center top no-repeat #FFF;border-radius:10px;width:80%;margin:1px auto 20px;padding:5px;}
+#game-tool{background: url(img/tbg.jpg) center top no-repeat #FFF; */
+    border-radius: 10px;
+    width: 80%;
+    margin: 1px auto 20px;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* border-radius: 2px; */}
 #game-tool h1{overflow:hidden;margin:0;padding:0;text-indent:-3000px;background:url(img/logo.png) no-repeat center center;width:205px;height:100px;margin:-30px auto 16px;}
 #game-tool-disclaimer{padding-bottom:20px;text-align:center;}
 .game-tool-step h2{text-align:center;letter-spacing:-1px;font-weight:bold;margin-top:0;}
