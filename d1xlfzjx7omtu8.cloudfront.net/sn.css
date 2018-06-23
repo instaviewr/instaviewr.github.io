@@ -1,8 +1,12 @@
-body{background:url(https://www.instaspy.net/wp-content/uploads/2015/12/sliderpicture_Fotor.jpg);    position: relative;
-    padding: 50px 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;}
+body{
+overflow-x: hidden;
+    background: url(../img/mainbg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
 #game-tool{background:url(img/tbg.jpg) center top no-repeat #FFF;border-radius:10px;width:80%;margin:1px auto 20px;padding:5px;}
 #game-tool h1{overflow:hidden;margin:0;padding:0;text-indent:-3000px;background:url(img/logo.png) no-repeat center center;width:205px;height:100px;margin:-30px auto 16px;}
 #game-tool-disclaimer{padding-bottom:20px;text-align:center;}
