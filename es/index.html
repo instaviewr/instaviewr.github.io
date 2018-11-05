@@ -49,16 +49,39 @@
 
 <body dir="ltr">
 
+<style>
+/*<![CDATA[*/
+.sticky-ads{display:-ms-flexbox;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:fixed;overflow:visible;text-align:center;bottom:-104px;left:0;width:100%;z-index:9999;height:100px;background-image:none;background-color:#fff;margin-bottom:0;padding-top:4px;box-shadow:0 0 5px 0 rgba(0,0,0,0.2);transition:all .4s ease-in-out}
+.sticky-ads-close{position:absolute;width:28px;height:28px;top:-28px;right:0;background-image:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTMnIGhlaWdodD0nMTMnIHZpZXdCb3g9JzM0MSA4IDEzIDEzJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJz48Zz48cGF0aCBzdHlsZT0nZmlsbDojNEY0RjRGJyBkPSdNMzU0IDkuMzFMMzUyLjY5IDhsLTUuMTkgNS4xOUwzNDIuMzEgOCAzNDEgOS4zMWw1LjE5IDUuMTktNS4xOSA1LjE5IDEuMzEgMS4zMSA1LjE5LTUuMTkgNS4xOSA1LjE5IDEuMzEtMS4zMS01LjE5LTUuMTl6Jz48L3BhdGg+PC9nPjwvc3ZnPg==");background-size:13px 13px;background-position:9px;background-color:#fff;background-repeat:no-repeat;box-shadow:0 -1px 1px 0 rgba(0,0,0,0.2);border:none;border-radius:12px 0 0 0;cursor:pointer}
+.sticky-ads-close:before{position:absolute;content:"";top:-20px;right:0;bottom:0;left:-20px}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+:active,:focus{outline:0}
+/*]]>*/
+</style>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=163316004492631&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<div class='sticky-ads' id='sticky-ads'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- larg-mob -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:100px"
+     data-ad-client="ca-pub-6692292426729648"
+     data-ad-slot="2344703021"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+<button aria-label='Kapat' class='sticky-ads-close' onclick='document.getElementById(&apos;sticky-ads&apos;).style.display=&apos;none&apos;;'/>
+</div>
+<script>
+//<![CDATA[
+window.addEventListener("scroll",function(){
+  var target = document.getElementById('sticky-ads');
+  if(window.pageYOffset > 300){
+   target.style.bottom = "0";
+  }
+},false);
+//]]>
+</script>
 
 	
 	<div id="game-tool">
